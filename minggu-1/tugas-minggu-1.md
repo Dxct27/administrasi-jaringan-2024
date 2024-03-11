@@ -104,3 +104,11 @@ Perintah “su” digunakan untuk beralih ke pengguna lain. Artinya mengubah ID 
 Perintah “sudo” memungkinkan pengguna untuk menjalankan berbagai tugas yang membutuhkan izin administrative atau root. Perintah in merupakan singkatan dari “SuperUser Do”. Hanya pengguna yang terdaftar di file “/etc/sudoers”yang dapat menjalankan perintah “sudo”. Saat menggunakan perintah “sudo”, pengguna akan dimintai kata sandi, karena perintah ini memungkinkan pengguna untuk mengontrol system secara penuh, seperti mengistal. Menghapus, atau mengubah perangkat lunak.
 
 ## Langkah-langkah penambahan user sebagai user sudo
+
+Langkah 1 : Jalankan perintah "su -" pada terminal, lalu anda akan diminta untuk memasukkan password root anda, kemudian jalankan perintah "visudo", perintah ini digunakan untuk memodifikasi file /etc/sudoers.  
+
+![sudoers](./Cap/Sudo1.png)
+
+Langkah 2 : Scroll ke bawah sampai ketemu "#User privilige specification", kemudian tambahkan user anda. Sekarang user anda dapat melakukan perintah sudo.  
+
+![sudoers](./Cap/Sudo2.png)  
